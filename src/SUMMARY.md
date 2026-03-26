@@ -6,4 +6,5 @@
 - [Chapter 4: Recent Trends and Advanced Structures](./chapter_4/index.md)
 - [Chapter 5: Redis Patterns in Go and Rust](./chapter_5/index.md)
 - [Chapter 6: Designing for Large-Scale Services](./chapter_6/index.md)
+  - [Practical Cache Invalidation Strategies](./chapter_6/cache_invalidation_strategies.md)
 - [Chapter 7: Redis Operations and Incident Response](./chapter_7/index.md)

@@ -2,9 +2,14 @@
 
 - [Chapter 1: Introduction](./chapter_1/index.md)
 - [Chapter 2: Redis Basic Concepts](./chapter_2/index.md)
+  - [What is Redis?](./chapter_2/what_is_redis.md)
+  - [Redis Characteristics](./chapter_2/redis_characteristics.md)
+  - [Technical and Operational Features](./chapter_2/technical_features.md)
 - [Chapter 3: Redis Core](./chapter_3/index.md)
 - [Chapter 4: Recent Trends and Advanced Structures](./chapter_4/index.md)
 - [Chapter 5: Redis Patterns in Go and Rust](./chapter_5/index.md)
 - [Chapter 6: Designing for Large-Scale Services](./chapter_6/index.md)
   - [Practical Cache Invalidation Strategies](./chapter_6/cache_invalidation_strategies.md)
+  <!-- - [Cache Stampede Prevention Strategies](./chapter_6/cache_stampede_prevention_strategies.md)
+  - [Lock Based Cache Stampede Prevention](./chapter_6/lock_based_cache_stampede_prevention.md) -->
 - [Chapter 7: Redis Operations and Incident Response](./chapter_7/index.md)

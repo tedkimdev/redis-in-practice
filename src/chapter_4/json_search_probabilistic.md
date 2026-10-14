@@ -2,7 +2,7 @@
 
 For years these features shipped as separate **modules** (RedisJSON, RediSearch, RedisBloom, RedisTimeSeries), bundled together as **Redis Stack**. Starting with **Redis 8**, they are part of the standard Redis distribution, so `JSON.SET`, `FT.SEARCH`, and `BF.ADD` work out of the box.
 
-> **Compatibility note:** On Redis 7.x OSS, Valkey, or many managed services, these commands exist only if the corresponding module is installed. Check with `MODULE LIST` or `COMMAND INFO JSON.SET` before you depend on them.
+> **Compatibility note:** On Redis 7.x or many managed services, these commands exist only if the corresponding module is installed. Valkey has its own modules (valkey-json, valkey-bloom, valkey-search, shipped together as valkey-bundle) with similar commands, but compatibility is not guaranteed. Check with `MODULE LIST` or `COMMAND INFO JSON.SET` before you depend on them.
 
 ## JSON
 
@@ -84,4 +84,4 @@ OK
 
 1. Redis 8 folded the former Redis Stack modules into core Redis.
 2. JSON for nested documents, Search for secondary indexes, probabilistic structures for "approximately" questions at tiny memory cost.
-3. Check availability per environment—these are not part of Valkey or older Redis by default.
+3. Check availability per environment—older Redis needs the modules, and Valkey offers its own equivalents (valkey-json, valkey-bloom, valkey-search) whose syntax and compatibility may differ.

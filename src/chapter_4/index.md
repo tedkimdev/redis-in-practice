@@ -15,6 +15,7 @@ Chapter 3 covered the "everyday" types: String, List, Set, Hash, and Sorted Set.
 - [Geospatial](./geospatial.md) — radius and box queries on coordinates
 
 **Beyond the core**
+- [Transactions & Scripting](./transactions_and_scripting.md) — MULTI/EXEC/WATCH, Lua scripts, and Redis Functions
 - [JSON, Search & Probabilistic Structures](./json_search_probabilistic.md) — what used to be "Redis Stack"
 - [Vector Search](./vector_search.md) — Redis as a vector store for AI workloads
 

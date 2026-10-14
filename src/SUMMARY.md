@@ -18,6 +18,7 @@
   - [Bitmaps & Bitfields](./chapter_4/bitmaps_and_bitfields.md)
   - [HyperLogLog](./chapter_4/hyperloglog.md)
   - [Geospatial](./chapter_4/geospatial.md)
+  - [Transactions & Scripting](./chapter_4/transactions_and_scripting.md)
   - [JSON, Search & Probabilistic Structures](./chapter_4/json_search_probabilistic.md)
   - [Vector Search](./chapter_4/vector_search.md)
   - [Redis 7.x/8, License Change & Valkey](./chapter_4/ecosystem_trends.md)

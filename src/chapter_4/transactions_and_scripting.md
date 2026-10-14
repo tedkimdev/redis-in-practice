@@ -167,10 +167,10 @@ Load functions once from your deploy pipeline or startup scripts; application co
 
 ## Pitfalls
 
-- **Scripts block the server.** While a script or function runs, every other client waits. No long loops, no scanning big keys—keep them short.
+- **Scripts block the server.** While a script or function runs, every other client waits. No long loops, no scanning big keys—keep them short. If one runs past `busy-reply-threshold` (formerly `lua-time-limit`, default 5s), stop it with `SCRIPT KILL` (for `EVAL`) or `FUNCTION KILL` (for functions); either works only if the script hasn't written anything yet—otherwise only `SHUTDOWN NOSAVE` helps.
 - **Declare every key in `KEYS`.** Building key names inside the script breaks Redis Cluster routing; all keys in one call must hash to the same slot (use hash tags like `{user:42}`).
 - **`MULTI` is not rollback.** Validate inputs before queuing commands.
-- **Functions are data.** `FLUSHALL` does not remove them, but restoring an RDB from another environment can bring in—or miss—libraries. Version your `.lua` files in Git.
+- **Functions are data.** `FLUSHALL` does not remove them (use `FUNCTION FLUSH` for that), but restoring an RDB from another environment can bring in—or miss—libraries. Version your `.lua` files in Git.
 
 ## Things to think about
 

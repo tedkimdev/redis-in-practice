@@ -9,7 +9,7 @@ Many Redis blog posts and courses were written in the 5.0–6.x era. Redis 7.x a
 | **5.x – 6.x** | 2018–2021 | Streams, listpack introduced, module ecosystem grows |
 | **7.0 – 7.2** | 2022–2023 | Internal architecture: listpack everywhere, multi-part AOF, Functions, sharded Pub/Sub |
 | **7.4** | 2024 | Hash field expiration; first release under the new license |
-| **8.0** | GA May 2, 2025 | Multi-model platform: former Redis Stack features built in |
+| **8.0** | May 2025 | Multi-model platform: former Redis Stack features built in |
 
 The direction is clear: **from a cache server to a data platform.**
 
@@ -90,7 +90,7 @@ Practically: install plain Redis 8 and you can store JSON documents and search t
 | Version | License |
 |---|---|
 | ≤ 7.2.x | BSD-3-Clause (7.2 is the last BSD release line; 7.2.x patch releases stay BSD) |
-| 7.4.x – 7.8.x | Dual RSALv2 / SSPLv1 (change announced **March 2024**) |
+| 7.4.x | Dual RSALv2 / SSPLv1 (change announced **March 2024**) |
 | ≥ 8.0 | Your choice of RSALv2, SSPLv1, or **AGPLv3** (added with 8.0 GA, May 2025) |
 
 RSALv2 and SSPLv1 are "source available," not OSI-approved; the change targeted cloud providers selling Redis as a managed service. AGPLv3 *is* OSI-approved open source, but it is copyleft: if you modify Redis and offer it over a network, you must publish your changes.
